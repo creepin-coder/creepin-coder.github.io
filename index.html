@@ -2,27 +2,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-</head>
-<body onclick="makeFlow(3)">
-    <div id="clicker" style="background-color: red; size: 200px 300px">
-        <p>here we go!</p>
-    </div>
-    <!-- TODO make the page preview. I mean, look, you paste URL and you get an iframe automatically (if availiable) -->
-
-
-    <iframe sandbox="allow-same-origin allow-popups allow-top-navigation allow-scripts" width="560" height="315" src="https://creepin-coder.github.io/1" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    <iframe sandbox="allow-same-origin allow-popups allow-top-navigation allow-scripts" width="560" height="315" src="https://creepin-coder.github.io/2" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    <iframe sandbox="allow-same-origin allow-popups allow-top-navigation allow-scripts" width="560" height="315" src="https://creepin-coder.github.io/3" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    <iframe sandbox="allow-same-origin allow-popups allow-top-navigation allow-scripts" width="560" height="315" src="https://creepin-coder.github.io/4" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    <iframe sandbox="allow-same-origin allow-popups allow-top-navigation allow-scripts" width="560" height="315" src="https://creepin-coder.github.io/5" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    <iframe sandbox="allow-same-origin allow-popups allow-top-navigation allow-scripts" width="560" height="315" src="https://creepin-coder.github.io/6" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
-
-
+    <title>Смотреть всем!</title>
     <!--
-    Очевидно, что яндексу кажется не нравится, когда мы пытаемся в один источник вставить дохуя всего. Хотя в хроме таких проблем не возниакет
+    <script type="text/javascript">
 
+        fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://yastatic.net/yandex-video-player-iframe-api-bundles/1.0-5513/js/skin.modern.js')}`).then(response => {
+                if (response.ok) return response.json()
+        throw new Error('Network response was not ok.')
+                }).then(data => console.log(data.contents));
+    </script>
     -->
+</head>
+<body>
 
+    <iframe width="560" height="315" src="https://creepin-coder.github.io/1" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen>
+    </iframe>
+    <iframe  width="560" height="315" src="https://creepin-coder.github.io/2" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    <iframe  width="560" height="315" src="https://creepin-coder.github.io/3" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<!--
+    <iframe  width="560" height="315" src="https://creepin-coder.github.io/4" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    <iframe  width="560" height="315" src="https://creepin-coder.github.io/5" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://creepin-coder.github.io/6" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
+-->
+    <!-- sandbox="allow-same-origin allow-popups allow-top-navigation allow-scripts"  -->
 </body>
 </html>

@@ -3,15 +3,39 @@
 <html>
 <head>
     <title></title>
+    <script type="text/javascript">
+        let popupUrl = 'https://creepin-coder.github.io'
+
+        function randomString(length, chars) {
+            var result = '';
+            for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+            return result;
+        }
+
+        function openInNewTab(url) {
+            let win = window.open(url, randomString(8, 'abcdefghiklmnoprstqvwxyz'+'abcdefghiklmnoprstqvwxyz'.toUpperCase()+'0123456789'),  '_blank');
+            win.focus();
+        }
+
+        function makeFlow(popupQuantity){
+            for (let i = 0; i++; i < popupQuantity) {
+                openInNewTab(popupUrl + '/${i}')
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="makeFlow(3)">
     <p>here we go!</p><!-- TODO make the page preview. I mean, look, you paste URL and you get an iframe automatically (if availiable) -->
+
+    <!--
     <iframe width="560" height="315" src="https://frontend.vh.yandex.ru/player/vgZRkPMmJLmE?from=partner&mute=1&autoplay=1&branding=0" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://frontend.vh.yandex.ru/player/veVkG5VVbfAI?from=partner&mute=1&autoplay=1&branding=0" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://frontend.vh.yandex.ru/player/vFXS1QARshFg?from=partner&mute=1&autoplay=1&branding=0" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://frontend.vh.yandex.ru/player/v1WZPud6J6W4?from=partner&mute=1&autoplay=1&branding=0" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://frontend.vh.yandex.ru/player/vEbGAG_CwNgU?from=partner&mute=1&autoplay=1&branding=0" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://frontend.vh.yandex.ru/player/v674-oFCNtBc?from=partner&mute=1&autoplay=1&branding=0" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    -->
+
     <!--
     TODO:
     1/ MAKE MULTIPLE DIRECTORIES OF WEBSITE AND

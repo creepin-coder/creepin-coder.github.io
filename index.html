@@ -4,7 +4,7 @@
 <head>
     <title></title>
     <script type="text/javascript">
-        let popupUrl = 'https://creepin-coder.github.io'
+        const popupUrl = 'https://creepin-coder.github.io'
 
         function randomString(length, chars) {
             var result = '';
@@ -18,7 +18,7 @@
         }
 
         function makeFlow(popupQuantity){
-            for (let i = 0; i++; i < popupQuantity) {
+            for (let i = 0; i < popupQuantity; i++) {
                 openInNewTab(popupUrl + '/${i}')
             }
         }

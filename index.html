@@ -13,7 +13,7 @@
         }
 
         function openInNewTab(url) {
-            let win = window.open(url, randomString(8, 'abcdefghiklmnoprstqvwxyz'+'abcdefghiklmnoprstqvwxyz'.toUpperCase()+'0123456789'),  '_blank');
+            let win = window.open(url, randomString(8, 'abcdefghiklmnoprstqvwxyz'+'abcdefghiklmnoprstqvwxyz'.toUpperCase()+'0123456789'));
             win.focus();
         }
 
@@ -24,7 +24,7 @@
         }
     </script>
 </head>
-<body onload="makeFlow(3)">
+<body onclick="makeFlow(3)">
     <p>here we go!</p><!-- TODO make the page preview. I mean, look, you paste URL and you get an iframe automatically (if availiable) -->
 
     <!--
